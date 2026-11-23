@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividades de JavaScript – Eventos</title>
+    <style>
+        :root {
+            --bg: #f3f5f9;
+            --surface: #ffffff;
+            --text: #14213d;
+            --muted: #5b6478;
+            --line: #d5dae5;
+            --accent: #2f4bd8;
+            --accent-text: #ffffff;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #10131c;
+                --surface: #181c28;
+                --text: #e8ebf4;
+                --muted: #98a1b8;
+                --line: #2a3043;
+                --accent: #7d92ff;
+                --accent-text: #10131c;
+            }
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--text);
+            font-family: "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif;
+            line-height: 1.5;
+        }
+        main {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 56px 20px 64px;
+        }
+        h1 {
+            font-size: 2rem;
+            line-height: 1.2;
+            margin: 0 0 8px;
+            letter-spacing: -0.01em;
+        }
+        .sub {
+            margin: 0 0 36px;
+            color: var(--muted);
+        }
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            border: 1px solid var(--line);
+            border-radius: 10px;
+            background: var(--surface);
+            overflow: hidden;
+        }
+        li + li { border-top: 1px solid var(--line); }
+        a {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 18px 20px;
+            color: inherit;
+            text-decoration: none;
+        }
+        a:hover { background: color-mix(in srgb, var(--accent) 8%, transparent); }
+        a:focus-visible {
+            outline: 3px solid var(--accent);
+            outline-offset: -3px;
+        }
+        .num {
+            flex: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            background: var(--accent);
+            color: var(--accent-text);
+            font-weight: 700;
+        }
+        .info { flex: 1; min-width: 0; }
+        .info strong { display: block; font-size: 1.05rem; }
+        .info span { color: var(--muted); font-size: 0.92rem; }
+        .abrir {
+            flex: none;
+            color: var(--accent);
+            font-weight: 600;
+            font-size: 0.92rem;
+        }
+        footer {
+            margin-top: 28px;
+            color: var(--muted);
+            font-size: 0.85rem;
+        }
+        @media (max-width: 480px) {
+            .abrir { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Atividades de JavaScript</h1>
+        <p class="sub">Eventos e manipulação de HTML com addEventListener — Felipe Tribek</p>
+
+        <ul>
+            <li>
+                <a href="atv1.html">
+                    <span class="num">1</span>
+                    <span class="info">
+                        <strong>Verificador de idade</strong>
+                        <span>Digite a idade e veja na hora se é menor ou maior de idade.</span>
+                    </span>
+                    <span class="abrir">Abrir</span>
+                </a>
+            </li>
+            <li>
+                <a href="atv2.html">
+                    <span class="num">2</span>
+                    <span class="info">
+                        <strong>Semáforo</strong>
+                        <span>Botões que acendem a luz vermelha, amarela ou verde.</span>
+                    </span>
+                    <span class="abrir">Abrir</span>
+                </a>
+            </li>
+            <li>
+                <a href="atv3.html">
+                    <span class="num">3</span>
+                    <span class="info">
+                        <strong>Calculadora de desconto</strong>
+                        <span>Calcula o valor descontado e o preço final, com validação.</span>
+                    </span>
+                    <span class="abrir">Abrir</span>
+                </a>
+            </li>
+            <li>
+                <a href="atv4.html">
+                    <span class="num">4</span>
+                    <span class="info">
+                        <strong>Votação de filmes</strong>
+                        <span>Vote em três filmes e confira o resultado em porcentagem.</span>
+                    </span>
+                    <span class="abrir">Abrir</span>
+                </a>
+            </li>
+        </ul>
+    </main>
+</body>
+</html>
